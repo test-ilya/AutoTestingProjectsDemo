@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
-import { LanguageChangeClass } from '../PageObjectClasses/LanguageChangeClass';
+import { LanguageChange } from '../PageObjectClasses/LanguageChange';
 import { Languages } from './LanguagesTestData';
 
 test('has title', async ({ page }) => {
-    const languageChange = new LanguageChangeClass(page);
+    const languageChange = new LanguageChange(page);
     let language;
     await page.goto('https://eda.yandex.ru');
 
