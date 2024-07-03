@@ -25,3 +25,4 @@ test('Выбор адреса доставки', async ({ page })  => {
     // Проверить, что адрес доставки выбран
     expect(page.locator('[class="DesktopAddressButton_option"]')).toContainText(adress);
 });
+//test
