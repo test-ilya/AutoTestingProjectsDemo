@@ -10,7 +10,7 @@ export class LanguageChange {
     public async changeLanguage(value: string) {
         await this.page.click(this.changeLanguageSelector);
         await this.page.click(this.setLanguageSelector(value));
-        // await this.page.waitForTimeout(5000);
+        await this.page.waitForTimeout(3000);
     }
 
     public async getLanguage() {
