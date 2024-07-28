@@ -35,7 +35,16 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+          ...devices['Desktop Chrome'],
+        //   launchOptions: {
+        //     args: ['--ignore-certificate-errors']
+        // },
+        viewport: {
+          "width": 1920,
+          "height": 1080
+        }
+      },
     },
 
     // {
@@ -64,9 +73,14 @@ export default defineConfig({
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
     // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+  //     name: 'Google Chrome',
+  //     use: { ...devices['Desktop Chrome'], channel: 'chrome',
+  //     viewport: {
+  //       "width": 1280,
+  //       "height": 720
+  //     }
+  //      },
+  //   },
   ],
 
   /* Run your local dev server before starting the tests */
