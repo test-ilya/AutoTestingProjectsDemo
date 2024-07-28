@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
 
 export class LanguageChange {
-    private readonly changeLanguageSelector = '[class="ChangeLanguage_languageRoot"]';
+    private readonly changeLanguageSelector = '[class="LanguageButton_root"]';
     private readonly getLanguageSelector = '[class="ChangeLanguage_name"]';
     private setLanguageSelector = (value: string) => `//button[@class="ChangeLanguage_item"][text()="${value}"]`;
     
