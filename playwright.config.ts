@@ -33,24 +33,29 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { 
-          ...devices['Desktop Chrome'],
-        //   launchOptions: {
-        //     args: ['--ignore-certificate-errors']
-        // },
-        viewport: {
-          "width": 1920,
-          "height": 1080
-        }
-      },
-    },
-
     // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    //   name: 'chromium',
+    //   use: { 
+    //       ...devices['Desktop Chrome'],
+    //     //   launchOptions: {
+    //     //     args: ['--ignore-certificate-errors']
+    //     // },
+    //     viewport: {
+    //       "width": 1920,
+    //       "height": 1080
+    //     }
+    //   },
+    // // },
+
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'],
+      viewport: {
+            "width": 1280,
+            "height": 720
+          }
+       },
+    },
 
     // {
     //   name: 'webkit',
@@ -73,14 +78,14 @@ export default defineConfig({
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
     // {
-  //     name: 'Google Chrome',
-  //     use: { ...devices['Desktop Chrome'], channel: 'chrome',
-  //     viewport: {
-  //       "width": 1280,
-  //       "height": 720
-  //     }
-  //      },
-  //   },
+    //   name: 'Google Chrome',
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome',
+    //   viewport: {
+    //     "width": 1280,
+    //     "height": 720
+    //   }
+    //    },
+    // },
   ],
 
   /* Run your local dev server before starting the tests */
