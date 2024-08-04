@@ -23,7 +23,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,
+    // headless: false,
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
@@ -33,29 +33,29 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { 
-    //       ...devices['Desktop Chrome'],
-    //     //   launchOptions: {
-    //     //     args: ['--ignore-certificate-errors']
-    //     // },
-    //     viewport: {
-    //       "width": 1920,
-    //       "height": 1080
-    //     }
-    //   },
-    // // },
-
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'],
-      viewport: {
-            "width": 1280,
-            "height": 720
-          }
-       },
+      name: 'chromium',
+      use: { 
+          ...devices['Desktop Chrome'],
+        //   launchOptions: {
+        //     args: ['--ignore-certificate-errors']
+        // },
+        viewport: {
+          "width": 1920,
+          "height": 1080
+        }
+      },
     },
+
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'],
+    //   viewport: {
+    //         "width": 1280,
+    //         "height": 720
+    //       }
+    //    },
+    // },
 
     // {
     //   name: 'webkit',
