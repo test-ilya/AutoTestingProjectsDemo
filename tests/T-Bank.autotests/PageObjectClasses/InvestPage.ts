@@ -1,4 +1,4 @@
-import { BasePage } from "../BasePage/BasePage";
+import { BasePage } from "../PageObjectClasses/BasePage";
 
 export class InvestPage extends BasePage {
     private readonly investPageSelector = '[data-item-name="Инвестиции"]';

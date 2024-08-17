@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { InvestPage } from '../../PageObjectClasses/InvestPage/InvestPage';
+import { InvestPage } from '../../PageObjectClasses/InvestPage';
 
 const url = 'https://www.tbank.ru';
 const urlInvest = 'https://www.tbank.ru/invest/';
