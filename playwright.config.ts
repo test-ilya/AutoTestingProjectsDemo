@@ -41,8 +41,8 @@ export default defineConfig({
         //     args: ['--ignore-certificate-errors']
         // },
         viewport: {
-          "width": 1920,
-          "height": 1080
+          "width": 1270,
+          "height": 720
         }
       },
     },
