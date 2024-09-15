@@ -8,7 +8,7 @@ test('Open User Profile', async ({ page }) => {
     const profilePage = new ProfilePage(page);
     const mainPage = new MainPage(page);
  
-    await page.reload();
+    await page.goto('https://github.com');
     
     // Open user sidebar menu
     await mainPage.openSideBarMenu();

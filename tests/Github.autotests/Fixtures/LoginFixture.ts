@@ -11,8 +11,8 @@ export const test = loginTest.extend<LoginFixture>({
     const login = new LoginPage(page);
 
     await login.openLoginPage();
-    await login.setLogin('');
-    await login.setPassword('');
+    await login.setLogin('Set user login');
+    await login.setPassword('Set user password');
     await login.clickSignIn();
 
     await expect(
